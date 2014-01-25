@@ -37,6 +37,9 @@ gem 'jbuilder', '~> 1.2'
 # Adds attr_accessible to rails 4
 gem 'protected_attributes'
 
+#rails plugins of heroku platform
+gem 'rails_12factor', group: :production
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
