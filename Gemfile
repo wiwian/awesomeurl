@@ -3,13 +3,7 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
 
-group :development, :test do
-	gem 'pg'
-end
-
-group :production do
-	gem 'pg'
-end
+gem 'pg'
 
 # Use less for stylesheets
 gem 'less-rails'
