@@ -1,0 +1,20 @@
+<h2>Create a shorter URL</h2>
+
+<div style="background:red; color: white; font-weight: bold;">
+<% @address.errors.full_messages.each do |message| %>
+<%= message %>
+<% end %>
+</div>
+
+<%= form_for @address do |form| %>
+	<div>
+	<%= form.label :name %>
+	<%= form.text_field :name %>
+	</div>
+
+	<div>
+	<%= form.label :location, "Location - must start with http://" %>
+	<%= form.text_field :location %>
+	</div>
+	<p><%= form.submit "Shorten it dammit!" %></p>
+	<% end %>
