@@ -10,7 +10,7 @@
 <tbody>
 <% @addresses.each do |address| %>
 <tr>
-<td><%= forward_user_url(name: address.name) %></td>
+<td><a href="<%= forward_user_url(name: address.name) %>" target="_blank"><%= forward_user_url(name: address.name) %></a></td>
 <td><%= address.location %></td>
 <td><%= address.clicks %></td>
 </tr>

@@ -1,2 +1,2 @@
 <h2>Your new short URL</h2>
-<%= forward_user_url(name: @address.name) %> will direct to <%= @address.location %>
+<a href="<%= forward_user_url(name: @address.name) %>" alt="" target="_blank"><%= forward_user_url(name: @address.name) %></a> will direct to <%= @address.location %>
