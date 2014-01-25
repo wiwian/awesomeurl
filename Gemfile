@@ -6,6 +6,7 @@ gem 'rails', '4.0.2'
 gem 'pg'
 
 # Use less for stylesheets
+gem 'sass-rails'
 gem 'less-rails'
 gem 'therubyracer'
 
